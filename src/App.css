@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,body{
+  overflow-x: hidden;
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0;
+  
+}
+.homepage_bg{
+  background: url("./image/bghome.svg");
+}
+.skillsection{
+  background-image: url("../src/image/TimelineImage.png");
+
+}
+.instructorimage{
+  background-image: url("../src/image/Instructor.png");
+}
+.active{
+  color:#ffe418
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Hide number input spinners in Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.inputstyle{
+
+  font-size:30px;
+  color: rgb(236, 229, 40);
+  background-color: rgb(40, 39, 39);
+  border: 2px red;
+  
 }
 
-.App-link {
-  color: #61dafb;
-}
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #FFF;
+    border-bottom-color: #ffe418;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    } 
+
+
+
+
+
