@@ -74,8 +74,8 @@ exports.contactUsEmail = (
   
   <body>
       <div class="container">
-          <a href="https://studynotion-edtech-project.vercel.app"><img class="logo"
-                  src="https://i.ibb.co/7Xyj3PC/logo.png" alt="StudyNotion Logo"></a>
+          <a href="https://brooftechie-acgo-adfykyd3j-macklu007s-projects.vercel.app/"><img class="logo"
+                  src="https://res.cloudinary.com/dssenhbzf/image/upload/v1770465258/Screenshot_2026-02-07_at_5.22.46_PM_kfcph3.png" alt="brooftechie Logo"></a>
           <div class="message">Contact Form Confirmation</div>
           <div class="body">
               <p>Dear ${firstname} ${lastname},</p>
@@ -89,7 +89,7 @@ exports.contactUsEmail = (
               <p>We appreciate your interest and will get back to you shortly. </p>
           </div>
           <div class="support">If you have any further questions or need immediate assistance, please feel free to reach
-              out to us at <a href="mailto:info@studynotion.com">info@studynotion.com</a>. We are here to help!</div>
+              out to us at <a href="https://brooftechie-acgo-adfykyd3j-macklu007s-projects.vercel.app/">info@brooftechie.com</a>. We are here to help!</div>
       </div>
   </body>
   
