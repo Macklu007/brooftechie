@@ -67,7 +67,7 @@ exports.courseEnrollmentEmail = (courseName, name) => {
   
   <body>
       <div class="container">
-          <a href="https://brooftechie-acgo-adfykyd3j-macklu007s-projects.vercel.app/"><img class="logo" src="https://res.cloudinary.com/dssenhbzf/image/upload/v1770465258/Screenshot_2026-02-07_at_5.22.46_PM_kfcph3.png"
+          <a href="https://brooftechie-acgo.vercel.app/"><img class="logo" src="https://res.cloudinary.com/dssenhbzf/image/upload/v1770465258/Screenshot_2026-02-07_at_5.22.46_PM_kfcph3.png"
                   alt="brooftechie Logo"></a>
           <div class="message">Course Registration Confirmation</div>
           <div class="body">
@@ -76,7 +76,7 @@ exports.courseEnrollmentEmail = (courseName, name) => {
                   are excited to have you as a participant!</p>
               <p>Please log in to your learning dashboard to access the course materials and start your learning journey.
               </p>
-              <a class="cta" href="https://brooftechie-acgo-adfykyd3j-macklu007s-projects.vercel.app/dashboard">Go to Dashboard</a>
+              <a class="cta" href="https://brooftechie-acgo.vercel.app/dashboard">Go to Dashboard</a>
           </div>
           <div class="support">If you have any questions or need assistance, please feel free to reach out to us at <a
                   href="mailto:info@brooftechie.com">info@brooftechie.com</a>. We are here to help!</div>
