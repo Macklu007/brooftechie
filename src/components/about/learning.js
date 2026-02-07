@@ -15,7 +15,7 @@ const LearningGridArray = [
     heading: "World-Class Learning for",
     highliteText: "Anyone, Anywhere",
     description:
-      "Studynotion partners with more than 275+ leading universities and companies to bring flexible, affordable, job-relevant online learning to individuals and organizations worldwide.",
+      "Brooftechie partners with more than 275+ leading universities and companies to bring flexible, affordable, job-relevant online learning to individuals and organizations worldwide.",
     BtnText: "Learn More",
     BtnLink: "/",
   },
@@ -41,13 +41,13 @@ const LearningGridArray = [
     order: 4,
     heading: `Rating "Auto-grading"`,
     description:
-      "Studynotion partners with more than 275+ leading universities and companies to bring",
+      "Brooftechie partners with more than 275+ leading universities and companies to bring",
   },
   {
     order: 5,
     heading: "Ready to Work",
     description:
-      "Studynotion partners with more than 275+ leading universities and companies to bring",
+      "Brooftechie partners with more than 275+ leading universities and companies to bring",
   },
 ];
 
