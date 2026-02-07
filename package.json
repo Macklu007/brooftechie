@@ -62,5 +62,11 @@
   "devDependencies": {
     "tailwindcss": "^3.4.17",
     "webpack-dev-server": "^5.2.2"
-  }
+  },
+  "engines": {
+  "node": "18.x"
 }
+
+
+}
+
