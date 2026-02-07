@@ -72,7 +72,7 @@ function Contactus() {
             <div className='w-[55%] flex flex-col justify-center items-center border-richblack-400 border-[.2px] rounded-3xl'>
                 <div className='flex flex-col w-full  ml-10 mb-10 mt-16'>
                 <h1 className='text-white font-bold text-3xl '>Got a Idea? We’ve got the skills. Let’s team up</h1>
-                <p className='font-inter text-richblack-400 text-center'>Tall us more about yourself and what you’re got in mind.</p>
+                <p className='font-inter text-richblack-400 text-center'>Tell us more about yourself and what you’ve got in mind.</p>
               </div>
                 <Contactform />
             </div>
