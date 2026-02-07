@@ -33,7 +33,7 @@ exports.resetPasswordToken= async(req,res)=>{
         
 
 
-        const url = `https://brooftechie-acgo-adfykyd3j-macklu007s-projects.vercel.app/update-password/${token}`
+        const url = `https://brooftechie-acgo.vercel.app/update-password/${token}`
 
         await mailSender(
             email,
