@@ -78,3 +78,7 @@ export const studentEndpoints = {
   COURSE_VERIFY_API: baseurl + "/payment/verifyPayment",
   SEND_PAYMENT_SUCCESS_EMAIL_API: baseurl + "/payment/sendPaymentSuccessEmail",
 }
+
+export const ratingsEndpoints = {
+  REVIEWS_DETAILS_API: baseurl + "/getReviews",
+}

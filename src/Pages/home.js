@@ -12,6 +12,7 @@ import Explore from '../components/explore';
 import Navbar from '../components/common/navbar';
 import Modal from '../components/common/modal';
 import { useState } from 'react';
+import ReviewSlider from '../components/common/ReviewSlider';
 
 function Home() {
    const[openmodal,setmodal]=useState(false);
@@ -37,7 +38,7 @@ function Home() {
            
            
             <Link to={"/signup"}> 
-            <div className=' group mt-16 p-1 mx-auto rounded-full bg-richblack-800 font-bold text-richblack-200 transition-all duration-200 hover:scale-95 w-fit
+            <div className=' group mt-16 p-1 mx-auto rounded-full bg-richblack-800 font-bold text-richblack-200 transition-all duration-200 hover:scale-95 w-[300px] sm:w-fit 
             shadow-sm shadow-richblack-600'> 
                 <div className='flex flex-row items-center gap-2 rounded-full px-10 py-[5px] group - hover:bg-richblack-900' >
              <p>Become a Instructor</p>
@@ -54,7 +55,7 @@ function Home() {
        
       
 
-        <div className='flex flex-row  font-semibold text-white text-3xl text-center mx-auto w-fit mt-9 ' >
+        <div className='flex-col flex    sm:flex-row  font-semibold text-white text-2xl sm:text-3xl text-center mx-auto w-[350px] sm:w-fit mt-9 ' >
 
             <p>Empower Your Future with </p>
             
@@ -62,7 +63,7 @@ function Home() {
         
         </div>
 
-         <div className='text-richblack-300 font-bold w-8/12 mt-3 text-center mx-auto max-w-maxContent'>
+         <div className='text-richblack-300 font-bold  w-8/12 mt-3 text-center mx-auto max-w-maxContent'>
           With our online coding courses, you can learn at your own pace, from anywhere in the world, and get access to a wealth of resources, including hands-on projects, quizzes, and personalized feedback from instructors. 
 
         </div>
@@ -96,7 +97,7 @@ function Home() {
          postion={"lg:flex-row"} 
          
          heading={ 
-          <div className='text-3xl font-bold'>
+          <div className=' text-2xl sm:text-3xl font-bold'>
                       Unlock your 
                       <Highlighted text={"coding potential"} ></Highlighted>
                       <br/>
@@ -135,7 +136,7 @@ function Home() {
          postion={"lg:flex-row-reverse"} 
          
          heading={ 
-          <div className='text-3xl font-bold'>
+          <div className='text-2xl sm:text-3xl font-bold'>
                      Start 
                       <Highlighted text={"coding in seconds"} ></Highlighted>
                       <br/>
@@ -221,7 +222,7 @@ function Home() {
           </div>
         <div className='w-11/12 max-w-maxContent flex flex-col mx-auto mt-24'>
 
-              <div className='flex flex-row w-11/12 justify-center mx-auto gap-20 ' >
+              <div className='flex flex-col md:flex-row w-11/12 justify-center mx-auto gap-20 ' >
                   
                   
                   <div className='text-3xl'> 
@@ -230,7 +231,7 @@ function Home() {
                 </div>
 
                   <div className='text-richblack-500 font-semibold flex flex-col gap-6 '>
-                        <p>The modern StudyNotion is the dictates its own terms. Today, to be a competitive specialist requires more than professional skills.</p>
+                        <p>The modern Brooftechie is the dictates its own terms. Today, to be a competitive specialist requires more than professional skills.</p>
 
                         <div className='w-fit'>
                           <CTAbutton active={true} linkto={"/signup"}>Learn More</CTAbutton>
@@ -300,15 +301,17 @@ function Home() {
        
 
 
-
+             <ReviewSlider/>
          {/* section 4 */}
 
 
-
+        
          <div>
 
           <InstructorSection></InstructorSection>
          </div>
+
+         
        
 
     </div>

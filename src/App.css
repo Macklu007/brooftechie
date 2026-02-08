@@ -14,10 +14,16 @@ html,body{
 }
 .skillsection{
   background-image: url("../src/image/TimelineImage.png");
-
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .instructorimage{
   background-image: url("../src/image/Instructor.png");
+   background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
 }
 .active{
   color:#ffe418

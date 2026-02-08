@@ -43,7 +43,7 @@ function Explore() {
 
         <div className='w-11/12 mx-auto flex flex-col  mt-32 items-center'>
            
-            <div className='text-3xl font-bold text-white'>
+            <div className='text-xl sm:text-3xl font-bold text-white'>
                  Unlock the <Highlighted text= "Power of Code"/>   
             </div>
             <div className='text-richblack-400 font-semibold'>
@@ -53,11 +53,11 @@ function Explore() {
         </div>
 
 
-        <div className="flex flex-row gap-4 w-fit justify-center mt-8 mb-8 mx-auto bg-zinc-800 rounded-lg h-10 items-center  "  >
+        <div className="flex flex-row  sm:gap-4 w-[90%] sm:w-fit justify-center mt-8 mb-8 mx-auto bg-zinc-800 rounded-lg h-10 items-center  "  >
             {
                 tabsName.map((ele,index)=>{
                     return (
-                        <div key={index} className={`font-bold mx-5 cursor-pointer  ${currenttab===ele?"text-yellow-100":"text-richblack-200 "}`} onClick={()=>setcard(ele)}> 
+                        <div key={index} className={`font-bold mx-1 text-[10px] sm:text-lg sm:mx-5 cursor-pointer  ${currenttab===ele?"text-yellow-100":"text-richblack-200 "}`} onClick={()=>setcard(ele)}> 
                            {ele}
                         </div>
 
@@ -79,9 +79,9 @@ function Explore() {
 
 
 
-         <div className=' flex flex-row relative  h-[150px] w-11/12'>
+         <div className=' flex flex-row relative  h-[150px]  sm:w-11/12'>
 
-            <div className='flex flex-row absolute top-5 left-16   h-[350px]    ' >
+            <div className='flex  flex-row  gap-2 md:gap-0 absolute top-0 md:top-5 md:left-16  h-[350px]    ' >
             {   
 
                 courses.map((course,index)=>(

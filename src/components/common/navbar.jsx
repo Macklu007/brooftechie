@@ -26,6 +26,7 @@ function Navbar({setmodal}) {
  
   const[isclick,setisclick]=useState(false);
    const [loading, setLoading] = useState(false)
+   
 
   const navigate=useNavigate();
   const dispatch=useDispatch();
@@ -106,23 +107,29 @@ function openmenu(){
 
 
   return (
-    <div className='w-full  bg-richblack-800 h-16 rounded-lg border-solid  border-b-2 border-gray-700 '>
+    <div className='  w-screen bg-richblack-800 h-16 rounded-lg border-solid  border-b-2 border-gray-700 '>
+       
+
+       
+
+
+
+       
         
-        
-        <div className=' w-11/12 h-16 flex flex-row items-center justify-between  mx-auto'>
+        <div className=' flex flex-row  w-11/12    h-16  items-center justify-between sm:justify-between  mx-auto'>
          
         <Link to={"/"}>
-        <div className='flex flex-row items-center text-3xl font-extrabold text-yellow-100 '>
+        <div className='flex flex-row items-center   text-sm  sm:text-3xl font-extrabold text-yellow-100 '>
              <FaCode />
        <p className='  text-white'>Broof<span className='text-yellow-100'>Techie</span></p>
         </div>
         
       
-            </Link>
+            </Link> 
      
 
-        <div className='w-[35%] '>
-            <ul className=' flex flex-row text-richblack-300 gap-7 font-black'>
+        <div className='w-[170px] sm:w-[35%] flex flex-row justify-center items-center  '>
+            <ul className=' flex flex-row text-richblack-300 gap-2 sm:gap-7 font-black   '>
                 {
                    NavbarLinks.map((sublink ,index)=>
                    {
@@ -134,7 +141,7 @@ function openmenu(){
                          (
                           <>
                     <div
-                      className={`group relative flex cursor-pointer items-center gap-1 ${
+                      className={`group relative flex cursor-pointer items-center gap-1 text-[8px] sm:text-[16px] ${
                         matchRoute("/catalog/:catalogName")
                           ? "text-yellow-25"
                           : "text-richblack-25"
@@ -176,7 +183,7 @@ function openmenu(){
                            
                            :
 
-                           (<li key={index}>
+                           (<li key={index} className='text-[8px] sm:text-[16px] '>
                             <NavLink to={sublink.path}>{sublink.title}</NavLink>
                            </li>)
 
@@ -194,9 +201,9 @@ function openmenu(){
 
 
 
-                      <div className='flex flex-row gap-8 font-semibold  '>
+                      <div className='flex flex-row gap-2 sm:gap-8 font-semibold w-[20%] sm:[w-[30%]]  '>
                           { token==null &&
-                              <div className =" w-20 h-8  bg-yellow-100 flex flex-row justify-center items-center rounded-md hover:scale-110 transition-all duration-200   ">
+                              <div className =" w-11 sm:w-20 h-5 sm:h-8  text-[8px] sm:text-[16px] bg-yellow-100 flex flex-row justify-center items-center rounded-md hover:scale-110 transition-all duration-200   ">
 
                               <Link to="/login">
                               Login
@@ -208,7 +215,7 @@ function openmenu(){
 
                           
                           { token==null &&
-                              <div className =" w-20 h-8  bg-yellow-100 flex flex-row justify-center items-center  rounded-md  hover:scale-110 transition-all duration-200 ">
+                              <div className =" w-11 h-5 sm:h-8  sm:w-20 text-[8px] sm:text-[16px] bg-yellow-100 flex flex-row justify-center items-center  rounded-md  hover:scale-110 transition-all duration-200 ">
                               <Link
                                 to="/signup">
                               
@@ -223,7 +230,7 @@ function openmenu(){
                          
                           { token!==null &&
                             
-                            <div className ="  w-24 h-8  bg-yellow-100 flex flex-row justify-center items-center rounded-md ">
+                            <div className ="hidden  h-5 sm:h-8 sm:flex  w-24 text-[8px] sm:text-[16px] bg-yellow-100  flex-row justify-center items-center rounded-md ">
 
                               <Link to="/dashboard/my-profile">
                             Dashboard
@@ -238,7 +245,7 @@ function openmenu(){
                          
                           { (token &&  user?.accountType !== "Instructor" ) &&
                           
-                          <div className=' relative text-yellow-100 flex flex-row justify-center items-center w-16 h-8 text-3xl '>
+                          <div className=' relative text-yellow-100 flex flex-row justify-center items-center w-10 sm:w-16 h-8 text-[16px] sm:text-3xl '>
                                 <FiShoppingCart onClick={()=>{navigate("/dashboard/cart")}} />
                                 { cart.length >0 &&
                                   <p className='absolute top-[-8px] left-11 text-white text-base '>{cart.length}</p>
@@ -271,18 +278,18 @@ function openmenu(){
              
               {  token!==null &&
                
-               <div className='bg-white rounded-full size-8 justify-center flex items-center relative ' onClick={openmenu}>
+               <div className='bg-white rounded-full sm:size-8 size-6 justify-center flex items-center relative ' onClick={openmenu}>
 
                 <img 
                 src={image} 
                 alt='Profile'
-                className='rounded-full size-7'
+                className='rounded-full sm:size-7 size-5'
                  />
 
                   { isclick &&
 
 
-                    <div className='absolute top-12 bg-richblack-700 font-bold text-richblack-300 flex flex-col gap-2 w-28 items-center pb-5 mt-1 h-30  z-20 '  >
+                    <div className='absolute top-6 right-0 sm:top-12 bg-richblack-700 font-bold text-richblack-300 flex flex-col gap-2 w-18 sm:w-28 items-center pb-5 mt-1 h-14 sm: h-30  z-20 '  >
                     
                      <Link to="/dashboard/my-profile">Dashboard</Link>
 
@@ -314,7 +321,8 @@ function openmenu(){
          </div>
 
              
-          
+
+        
 
     </div>
   )

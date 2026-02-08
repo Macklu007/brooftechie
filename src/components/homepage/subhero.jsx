@@ -38,7 +38,7 @@ function Subhero() {
   
     return (
 
-    <div className='w-11/12 flex flex-row mt-10 justify-between mb-44 mx-auto'>
+    <div className='w-11/12 flex flex-col md:flex-row mt-10 justify-between mb-44 mx-auto'>
         
         
         <div>
@@ -79,13 +79,13 @@ function Subhero() {
         </div>
 
 
-        <div className=' w-7/12 relative '>
+        <div className=' w-[100%] md:w-7/12 relative '>
                     
-                    <div className='skillsection w-[100%] h-[95%]  shadow-orange-400 shadow-xl'>
+                    <div className='skillsection w-[360px] h-[400px]  md:w-[100%] md:h-[95%]  shadow-orange-400 shadow-xl '>
 
                     </div>
            
-            <div className='absolute w-3/4 h-24 bg-caribbeangreen-700 flex flex-row  bottom-0 mt-2 ml-20'>
+            <div className='absolute w-[90%] md:w-3/4 h-24 bg-caribbeangreen-700 flex flex-row bottom-1 left-3  md:bottom-0 mt-2 md:ml-20'>
 
             <div className= ' flex flex-row  justify-center gap-3 h-16 items-center w-[50%] border-r-2 border-neutral-600 mt-3'>
 
