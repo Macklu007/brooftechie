@@ -25,16 +25,16 @@ function Contactus() {
         <Navbar setmodal={setModal}/>
 
         
-        <div className='flex flex-row w-11/12 justify-around mx-auto items-center mt-10'>
+        <div className='flex flex-col md:flex-row w-11/12 justify-around mx-auto items-center mt-10'>
               
            
 
-               <div className='w-[40%] flex flex-col justify-start items-start h-[70vh] '>
+               <div className='w-[80%] md:w-[40%] flex flex-col justify-center items-center md:justify-start md:items-start h-[40vh] md:h-[70vh] '>
 
 
 
                   
-               <div className=' flex flex-col pl-10 mx-auto justify-center bg-richblack-800  w-[25vw] h-[35vh] gap-5 rounded-2xl'>
+               <div className=' flex flex-col pl-10 mx-auto justify-center bg-richblack-800 w-[300px] h-[300px]  md:w-[25vw] md:h-[35vh] gap-5 rounded-2xl'>
             
             
             <div className='flex flex-col justify-start items-start  w-full'>
@@ -69,10 +69,10 @@ function Contactus() {
            
            
            
-            <div className='w-[55%] flex flex-col justify-center items-center border-richblack-400 border-[.2px] rounded-3xl'>
-                <div className='flex flex-col w-full  ml-10 mb-10 mt-16'>
-                <h1 className='text-white font-bold text-3xl '>Got a Idea? We’ve got the skills. Let’s team up</h1>
-                <p className='font-inter text-richblack-400 text-center'>Tell' us more about yourself and what you’ve got in mind.</p>
+            <div className='w-[100%] md:w-[55%] flex flex-col justify-center items-center border-richblack-400 border-[.2px] rounded-3xl'>
+                <div className='flex flex-col w-full ml-5 md:ml-10 mb-10 mt-16'>
+                <h1 className='text-white font-bold text-[20px]  md:text-3xl '>Got a Idea? We’ve got the skills. Let’s team up</h1>
+                <p className='font-inter text-richblack-400 text-center'>Tell us more about yourself and what you’ve got in mind.</p>
               </div>
                 <Contactform />
             </div>

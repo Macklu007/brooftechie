@@ -29,7 +29,7 @@ function Tab({currenttab,setaccounttype }) {
     
 
   return (
-    <div className='w-[40%] rounded-full bg-richblack-700 text-richblack-100 h-[40px] flex flex-row gap-2 border-b-2 border-richblack-400 mt-2 mb-2 font-mono ' >
+    <div className=' w-[160px] md:w-[40%] rounded-full bg-richblack-700 text-richblack-100 h-[40px] flex flex-row gap-2 border-b-2 border-richblack-400 mt-2 mb-2 font-mono text-xs md:text-lg ' >
         {
             tabs.map((tab)=>{
                 

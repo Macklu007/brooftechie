@@ -68,7 +68,7 @@ function Contactform() {
 
         <div className='flex justify-center items-center font-mono mb-10 w-full '> {/* Adjusted for full width within its parent */}
     {loading ?  <Spinner/>: 
-    <form onSubmit={handleSubmit(submit)} className='w-full md:w-[70%] flex flex-col gap-6 p-4 md:p-0'> {/* Adjusted form width and added padding */}
+    <form onSubmit={handleSubmit(submit)} className='w-[400px] md:w-[70%] flex flex-col gap-6 p-4 md:p-0'> {/* Adjusted form width and added padding */}
 
        <div className='flex flex-col md:flex-row w-full justify-between gap-4'> {/* Changed to flex-col for small screens, flex-row for medium+ */}
 
@@ -246,7 +246,7 @@ function Contactform() {
 
 
 
-       <button type='submit' className='bg-yellow-100 w-full rounded-lg h-10 font-bold text-richblack-900 hover:scale-95 transition-all duration-200'> {/* Added hover effect */}
+       <button type='submit' className='bg-yellow-100 w-full rounded-lg h-10 font-bold text-richblack-900 hover:scale-95 transition-all duration-200 mb-20' > {/* Added hover effect */}
         {loading ? 'Sending...' : 'Send Message'} {/* Dynamic button text based on loading state */}
        </button>
 

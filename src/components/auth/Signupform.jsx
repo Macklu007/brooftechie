@@ -146,12 +146,12 @@ function clickhandler2(){
        
          <Tab currenttab={accountType} setaccounttype ={setaccounttype} ></Tab>
        
-        <form onSubmit={handlesubmit} className='  flex flex-col w-[100%] gap-10 font-mono  mt-5 '>
+        <form onSubmit={handlesubmit} className='  flex flex-col w-[100%] gap-3 md:gap-10 font-mono  mt-5 '>
            
             
         
 
-            <div className=' flex flex-row gap-6 w-[100%]  '>
+            <div className=' flex flex-col md:flex-row  gap-3 md:gap-6 w-[100%]  '>
             
             <div >
                  <label className=' text-xs flex flex-row gap-2 items-center ' >First name<FaAsterisk className='text-red-500 text-[8px]' /></label>
@@ -181,13 +181,13 @@ function clickhandler2(){
               
               
               <label htmlFor="countrycode" className='text-xs flex flex-row items-center gap-2'>Mobile number <FaAsterisk className='text-red-500 text-[8px]' /> </label>
-               <div className=' w-[70%] flex flex-row gap-3' >
+               <div className='w-[88%] md:w-[70%] flex flex-row gap-1 md:gap-3' >
                 
                 
                 
                
                 <select name="countrycode" id="countrycode" value={countrycode} onChange={changehandle}
-                className=' w-[20%] bg-richblack-800  rounded-full h-8'
+                className='w-[20%] md:w-[20%] bg-richblack-800  rounded-full h-8 text-xs md:text-base'
                 >
 
                    { codes.map((item,index)=>(
@@ -206,7 +206,7 @@ function clickhandler2(){
                     required
                     placeholder='Mobile number'
                    minLength="10" 
-                    className='w-[90%] h-8 bg-richblack-800  border-b-[1px] border-richblack-400  rounded-lg pl-2' />
+                    className=' w-[90%] md:w-[95%] h-8 bg-richblack-800  border-b-[1px] border-richblack-400  rounded-lg pl-2' />
                 </div>
 
 
@@ -234,18 +234,18 @@ function clickhandler2(){
                   placeholder='Enter your email '
                   required
 
-                   className='bg-richblack-800 h-8 rounded-md border-b-[1px] border-richblack-400 w-[65%] pl-2 '
+                   className='bg-richblack-800 h-8 rounded-md border-b-[1px] border-richblack-400 w-[80%] md:w-[68%] pl-2 '
                   
                   />
            
              </div>
            
-              <div className='flex flex-row gap-5'>
+              <div className='flex flex-col md:flex-row gap-2 md:gap-5'>
 
 
 
               
-              <div className='flex  gap-2 items-center  '>
+              <div className='flex gap-1 md:gap-2 items-center  '>
                  
                  
                  <div className='flex flex-col  relative  '>
@@ -309,7 +309,7 @@ function clickhandler2(){
               </div>
               
                 
-                <button type='submit' className='bg-yellow-50 w-[65%] rounded-md text-stone-700 font-medium  h-10'>
+                <button type='submit' className='bg-yellow-100 w-[65%] rounded-md text-stone-700 font-medium h-6 md:h-10'>
                     Create Account
                 </button>
                

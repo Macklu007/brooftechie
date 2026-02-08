@@ -73,7 +73,7 @@ function Loginform() {
        <div>
 
                  <Tab currenttab={accountype} setaccounttype={setaccounttype}></Tab>
-          <form className='w-[100%] flex flex-col gap-14 font-mono mt-10   ' onSubmit={submit}>
+          <form className='w-[100%] flex flex-col gap-5 md:gap-14 font-mono mt-10   ' onSubmit={submit}>
        <div >
                          <label className=' text-xs flex flex-row gap-2 items-center ' >Email<FaAsterisk className='text-red-500 text-[8px]' /></label>
                         <input 
@@ -84,7 +84,7 @@ function Loginform() {
                           placeholder='Enter your email '
                           required
         
-                           className='bg-richblack-800 h-8 rounded-md border-b-[1px] border-richblack-400 w-[65%] pl-2 '
+                           className='bg-richblack-800 h-8 rounded-md border-b-[1px] border-richblack-400 w-[80%] md:w-[65%] text-[14px] pl-2 '
                           
                           />
                    
@@ -93,7 +93,7 @@ function Loginform() {
                       
                       
                       
-                      <div className='flex flex-col  relative w-[65%]  '>
+                      <div className='flex flex-col  relative w-[80%] md:w-[65%]  '>
                         
                         
                         <label className=' text-xs flex flex-row gap-2  items-center ' >Password <FaAsterisk className='text-red-500 text-[8px]' /></label>
@@ -105,7 +105,7 @@ function Loginform() {
                         placeholder='Password'
                         required
                         
-                        className='bg-richblack-800 h-8 rounded-md border-b-[1px] border-richblack-400  pl-2 ' />
+                        className='bg-richblack-800 h-8 rounded-md border-b-[1px] border-richblack-400  text-[14px]  pl-2 ' />
                         
                         {
                         
@@ -118,14 +118,14 @@ function Loginform() {
        
        
         <button type="submit" 
-        className='bg-yellow-50 w-[65%] rounded-md text-stone-700 font-medium  h-10'
+        className='bg-yellow-200 w-[80%]  md:w-[65%] rounded-md text-stone-700 font-medium h-6 md:h-10'
         >Login</button>
        </form>
 
 
        <Link to="/forgetpassword"
        
-       className='text-cyan-400 text-sm flex justify-end w-[65%] mt-3 font-mono'
+       className='text-cyan-400 text-xs md:text-sm flex justify-end w-[85%] md:w-[65%] mt-3 font-mono'
        
        ><span className='flex flex-row'>Forget password <FaQuestion /></span></Link>
         

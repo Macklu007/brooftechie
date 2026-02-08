@@ -22,9 +22,9 @@ function Signup() {
    
    <div>
     <Navbar></Navbar>
-  <Template title="Join the millions learning to code with StudyNotion for free"
+  <Template title="Join the millions "
 
-  description1="Build skills for today, tomorrow, and beyond "
+  description1="learning to code with Brooftechie for free Build skills for today, tomorrow, and beyond "
 
   description2="Education to future-proof your career."
 
